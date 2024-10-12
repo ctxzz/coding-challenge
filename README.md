@@ -43,11 +43,11 @@ void draw() {
 
 ```bash
 cd path/to/your/frames
-ffmpeg -framerate 20 -i frame%03d.png -vf "scale=400:-1:flags=lanczos,fps=10" ../output.gif
+ffmpeg -framerate 20 -i frame%03d.png -vf "scale=400:-1:flags=lanczos,fps=20" ../output.gif
 ```
 
 - -framerate 20: GIFのフレームレートを設定（例: 20fps）。
 - -i frame%03d.png: 入力ファイルの指定。
-- -vf "scale=400:-1:flags=lanczos,fps=10": 画像サイズを400ピクセル幅にスケールし、高さはアスペクト比を維持して自動計算。fps=10でGIFのフレームレートを設定。
+- -vf "scale=400:-1:flags=lanczos,fps=10": 画像サイズを400ピクセル幅にスケールし、高さはアスペクト比を維持して自動計算。fps=20でGIFのフレームレートを設定。
 - ../output.gif: 出力ファイル名を指定。
 
